@@ -3058,7 +3058,7 @@ class Axes(_AxesBase):
         bottom : float, default: 0
             The y/x-position of the baseline (depending on *orientation*).
 
-        label : str, default: None
+        label : str, optional
             The label to use for the stems in legends.
 
         data : indexable object, optional
@@ -6591,7 +6591,10 @@ class Axes(_AxesBase):
             elif x.ndim == 2 and y.ndim == 2:
                 style = "quadmesh"
             else:
-                raise TypeError("arguments do not match valid signatures")
+                raise TypeError(
+                    f"When 3 positional parameters are passed to pcolorfast, the first "
+                    f"two (X and Y) must be both 1D or both 2D; the given X was "
+                    f"{x.ndim}D and the given Y was {y.ndim}D")
         else:
             raise _api.nargs_error('pcolorfast', '1 or 3', len(args))
 
@@ -6831,7 +6834,7 @@ class Axes(_AxesBase):
             Color or sequence of colors, one per dataset.  Default (``None``)
             uses the standard line color sequence.
 
-        label : str or None, default: None
+        label : str or list of str, optional
             String, or sequence of strings to match multiple datasets.  Bar
             charts yield multiple patches per dataset, but only the first gets
             the label, so that `~.Axes.legend` will work as expected.
