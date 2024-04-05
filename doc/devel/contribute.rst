@@ -154,64 +154,20 @@ Work on an issue
 ----------------
 
 In general, the Matplotlib project does not assign issues. Issues are
-"assigned" or "claimed" by opening a PR; there is no other assignment
-mechanism. If you have opened such a PR, please comment on the issue thread to
-avoid duplication of work. Please check if there is an existing PR for the
-issue you are addressing. If there is, try to work with the author by
+"assigned" or "claimed" by
+:ref:`proposing a solution via a pull request <how-to-pull-request>`.
+We ask pull request (PR) authors to
+`link to the issue in the PR
+<https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue>`_ because then Github adds corresponding links to the PR to the discussion and the sidebar on the linked issue page on GitHub.
+
+Before starting to work on an issue, please check if there is already
+a linked PR. If there is, try to work with the author by
 submitting reviews of their code or commenting on the PR rather than opening
-a new PR; duplicate PRs are subject to being closed.  However, if the existing
+a new PR; duplicate PRs are unnecessary concurrent work and thus are subject
+to being closed.  However, if the existing
 PR is an outline, unlikely to work, or stalled, and the original author is
 unresponsive, feel free to open a new PR referencing the old one.
 
-.. _submitting-a-bug-report:
-
-Submit a bug report
-===================
-
-If you find a bug in the code or documentation, do not hesitate to submit a
-ticket to the
-`Issue Tracker <https://github.com/matplotlib/matplotlib/issues>`_. You are
-also welcome to post feature requests or pull requests.
-
-If you are reporting a bug, please do your best to include the following:
-
-#. A short, top-level summary of the bug. In most cases, this should be 1-2
-   sentences.
-
-#. A short, self-contained code snippet to reproduce the bug, ideally allowing
-   a simple copy and paste to reproduce. Please do your best to reduce the code
-   snippet to the minimum required.
-
-#. The actual outcome of the code snippet.
-
-#. The expected outcome of the code snippet.
-
-#. The Matplotlib version, Python version and platform that you are using. You
-   can grab the version with the following commands::
-
-      >>> import matplotlib
-      >>> matplotlib.__version__
-      '3.4.1'
-      >>> import platform
-      >>> platform.python_version()
-      '3.9.2'
-
-We have preloaded the issue creation page with a Markdown form that you can
-use to organize this information.
-
-Thank you for your help in keeping bug reports complete, targeted and descriptive.
-
-.. _request-a-new-feature:
-
-Request a new feature
-=====================
-
-Please post feature requests to the
-`Issue Tracker <https://github.com/matplotlib/matplotlib/issues>`_.
-
-The Matplotlib developers will give feedback on the feature proposal. Since
-Matplotlib is an open source project with limited resources, we encourage
-users to then also :ref:`participate in the implementation <contribute_code>`.
 
 .. _contribute_code:
 
@@ -232,7 +188,7 @@ our code consistent and mitigating the impact of changes.
 * :ref:`pr-guidelines`
 
 Code is contributed through pull requests, so we recommend that you start at
-:ref:`how-to-contribute` If you get stuck, please reach out on the
+:ref:`how-to-pull-request` If you get stuck, please reach out on the
 :ref:`contributor_incubator`
 
 .. _contribute_documentation:
@@ -266,7 +222,7 @@ document's URL roughly corresponds to its location in our folder structure:
 
   .. grid-item:: information about the library
 
-      * :file:`doc/users/installing/`
+      * :file:`doc/install/`
       * :file:`doc/project/`
       * :file:`doc/users/resources/`
       * :file:`doc/users/faq.rst`
@@ -285,7 +241,7 @@ Instructions and guidelines for contributing documentation are found in:
 * :doc:`tag_guidelines`
 
 Documentation is contributed through pull requests, so we recommend that you start
-at :ref:`how-to-contribute`. If that feels intimidating, we encourage you to
+at :ref:`how-to-pull-request`. If that feels intimidating, we encourage you to
 `open an issue`_ describing what improvements you would make. If you get stuck,
 please reach out on the :ref:`contributor_incubator`
 
@@ -309,7 +265,7 @@ please follow the :doc:`/project/citing` guidelines.
 If you have developed an extension to Matplotlib, please consider adding it to our
 `third party package <https://github.com/matplotlib/mpl-third-party>`_  list.
 
-.. _how-to-contribute:
+.. _how-to-pull-request:
 
 How to contribute via pull request
 ==================================
