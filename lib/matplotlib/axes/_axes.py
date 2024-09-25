@@ -86,13 +86,6 @@ class Axes(_AxesBase):
         methods instead; e.g. from `.pyplot` or `.Figure`:
         `~.pyplot.subplots`, `~.pyplot.subplot_mosaic` or `.Figure.add_axes`.
 
-    Attributes
-    ----------
-    dataLim : `.Bbox`
-        The bounding box enclosing all data displayed in the Axes.
-    viewLim : `.Bbox`
-        The view limits in data coordinates.
-
     """
     ### Labelling, legend and texts
 
@@ -6932,7 +6925,7 @@ such objects
             `~matplotlib.patches.Patch` properties. The following properties
             additionally accept a sequence of values corresponding to the
             datasets in *x*:
-            *edgecolors*, *facecolors*, *lines*, *linestyles*, *hatches*.
+            *edgecolor*, *facecolor*, *linewidth*, *linestyle*, *hatch*.
 
             .. versionadded:: 3.10
                Allowing sequences of values in above listed Patch properties.
